@@ -14,7 +14,7 @@ export const INITIAL_STATE = {
   filters: [],
 };
 
-export default (state = INITIAL_STATE, action) => {
+const state =  (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case STATUS_OK: {
       return {
@@ -33,3 +33,5 @@ export default (state = INITIAL_STATE, action) => {
       return state;
   }
 };
+
+export default state;
