@@ -28,7 +28,7 @@ export const applyFilters = ({
 
 const applyBorderFilter = (countryInitials, countries) => {
   return countries.filter((country) =>
-    country.borders.includes(countryInitials)
+    country.borders != null && country.borders.includes(countryInitials)
   );
 };
 
